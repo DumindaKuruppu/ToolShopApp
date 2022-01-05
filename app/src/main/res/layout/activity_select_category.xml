@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="188dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appicon" />
+
+    <TextView
+        android:id="@+id/txtViewHandTools"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/edit_text_background"
+        android:clickable="true"
+        android:ems="10"
+        android:paddingTop="5dp"
+        android:text="HAND TOOLS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewPowerTools"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/txtViewPowerTools"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtViewPowerTools"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:clickable="true"
+        android:ems="10"
+        android:paddingTop="5dp"
+        android:text="POWER TOOLS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewFastners"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/txtViewFastners"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewHandTools" />
+
+    <TextView
+        android:id="@+id/txtViewFastners"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:clickable="true"
+        android:ems="10"
+        android:paddingTop="5dp"
+        android:text="FASTNERS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewGardeningTools"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/txtViewGardeningTools"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewPowerTools" />
+
+    <TextView
+        android:id="@+id/txtViewGardeningTools"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:clickable="true"
+        android:ems="10"
+        android:paddingTop="5dp"
+        android:text="GARDENING TOOLS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewFastners" />
+
+    <Button
+        android:id="@+id/btnCategorySelect"
+        android:layout_width="249dp"
+        android:layout_height="72dp"
+        android:width="255dp"
+        android:height="80.81dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/pragati_narrow"
+        android:lineHeight="100sp"
+        android:text="SELECT"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgToolShopBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewGardeningTools"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <ImageView
+        android:id="@+id/imgToolShopBar"
+        android:layout_width="206dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:elevation="12dp"
+        android:longClickable="true"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/toolshop_bar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
